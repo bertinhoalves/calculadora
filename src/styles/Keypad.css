@@ -1,0 +1,25 @@
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.button {
+    background-color: #4b4b4b;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #636363;
+}
+
+@media screen and (max-width: 600px) {
+    .button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}

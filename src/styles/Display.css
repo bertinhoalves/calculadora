@@ -1,0 +1,42 @@
+.display {
+  background-color: #08920f;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  text-align: right;
+  border-radius: 10px 10px 0 0;
+  height: 80px; /* Tamanho fixo para o display */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.expression {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.result {
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 600px) {
+  .display {
+    font-size: 1.5rem;
+  }
+
+  .expression {
+    font-size: 1.2rem;
+  }
+
+  .result {
+    font-size: 1.5rem;
+  }
+  
+}
